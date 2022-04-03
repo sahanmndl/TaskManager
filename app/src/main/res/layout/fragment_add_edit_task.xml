@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,6 +25,7 @@
             android:id="@+id/cbPriority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/material_blue"
             android:minWidth="0dp"
             android:minHeight="0dp"
             android:text="@string/high_priority_task"
@@ -35,7 +37,8 @@
             android:layout_height="match_parent"
             android:gravity="top|start"
             android:hint="@string/add_task"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:textColor="@color/textPrimary" />
 
     </LinearLayout>
 
@@ -46,6 +49,8 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="25dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_save" />
+        android:src="@drawable/ic_save"
+        app:backgroundTint="@color/btnTint1"
+        app:tint="@color/drawableTint" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

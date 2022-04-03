@@ -29,6 +29,7 @@ abstract class TaskDatabase : RoomDatabase() {
                 dao.insert(Task(name = "Run"))
                 dao.insert(Task(name = "Walk", completed = true))
                 dao.insert(Task(name = "Suck"))
+                dao.insert(Task(name = "Suck"))
             }
         }
     }
