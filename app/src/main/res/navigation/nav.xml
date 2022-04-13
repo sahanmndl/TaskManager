@@ -25,4 +25,8 @@
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
+    <dialog
+        android:id="@+id/deleteAllCompletedDialogFragment"
+        android:name="com.sahanmondal.taskmanager.ui.tasks.fragments.DeleteAllCompletedDialogFragment"
+        android:label="DeleteAllCompletedDialogFragment" /><action android:id="@+id/action_global_deleteAllCompletedDialogFragment" app:destination="@id/deleteAllCompletedDialogFragment"/>
 </navigation>
